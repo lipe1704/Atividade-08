@@ -1,0 +1,20 @@
+//Crie um programa que contenha vetor de 100 elementos. Cada posição deve armazenar a letra ‘X’ ou
+//‘O’, conforme o valor do seu índice. Caso o índice seja par, a posição deve armazenar a letra ‘X’.
+//Caso o índice seja ímpar, aquela posição deve armazenar o valor ‘O’. Feito isso, o programa deve
+//apresentar o resultado na tela.
+#include <stdio.h>
+
+int main(){
+    char vet[100], i;
+    printf ("\n Informe 100 valores inteiros:\n ");
+    for (i = 0; i < 100; i++){
+        if (i%2==0){
+            vet[i]='x';
+        }else{
+            vet[i]='o';
+        }
+    }
+    for (int i = 0; i<100; i++){
+        printf ("\n %c", vet[i]);
+    }
+}
